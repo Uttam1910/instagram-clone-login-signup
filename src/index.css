@@ -1,13 +1,71 @@
+/* src/index.css */
 body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #fafafa;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.user-page {
+  background: white;
+  border: 1px solid #dbdbdb;
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.form-container h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+}
+
+input:focus {
+  border-color: #0095f6;
+  outline: none;
+}
+
+button {
+  background: #0095f6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+p span {
+  color: #0095f6;
+  cursor: pointer;
+}
+
+p span:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.form-container input:invalid {
+  border-color: red;
 }
